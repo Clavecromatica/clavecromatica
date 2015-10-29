@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @discografica.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @discografica.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_discografica_path(@discografica) %> |
+<%= link_to 'Back', discograficas_path %>

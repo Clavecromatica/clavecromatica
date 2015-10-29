@@ -1,0 +1,6 @@
+<%= bootstrap_form_for(@genero) do |f| %>
+	<%= f.alert_message "Datos incorrectos, corrija los siguientes datos:" %>
+    <%= f.text_field :nombre %>
+    <%= f.text_field :descripcion %>
+    <%= f.submit %>
+<% end %>

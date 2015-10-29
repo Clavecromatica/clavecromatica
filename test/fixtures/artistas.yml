@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  descripcion: MyText
+  fecha_origen: 2015-10-28
+  web: MyString
+
+two:
+  nombre: MyString
+  descripcion: MyText
+  fecha_origen: 2015-10-28
+  web: MyString

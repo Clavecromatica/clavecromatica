@@ -1,0 +1,10 @@
+<%= bootstrap_form_for(@disco) do |f| %>
+
+    <%= f.text_field :nombre %>
+    <%= f.date_select :publicacion %>
+    <%= f.text_field :precio %>
+	<%= f.select :artista_id, options_for_select(Artista.all.map {|a| [a.nombre, a.id ]})%>
+    <%= f.text_field :discografica_id %>
+	<%= f.submit %>
+  </div>
+<% end %>

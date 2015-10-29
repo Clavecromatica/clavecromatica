@@ -1,0 +1,33 @@
+<%= form_for(@artista) do |f| %>
+  <% if @artista.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@artista.errors.count, "error") %> prohibited this artista from being saved:</h2>
+
+      <ul>
+      <% @artista.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_area :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_origen %><br>
+    <%= f.date_select :fecha_origen %>
+  </div>
+  <div class="field">
+    <%= f.label :web %><br>
+    <%= f.text_field :web %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

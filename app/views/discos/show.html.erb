@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @disco.nombre %>
+</p>
+
+<p>
+  <strong>Publicacion:</strong>
+  <%= @disco.publicacion %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @disco.precio %>
+</p>
+
+<p>
+  <strong>Artista:</strong>
+  <%= @disco.artista.nombre %>
+</p>
+
+<p>
+  <strong>Discografica:</strong>
+  <%= @disco.discografica.nombre %>
+</p>
+
+<%= link_to 'Edit', edit_disco_path(@disco) %> |
+<%= link_to 'Back', discos_path %>

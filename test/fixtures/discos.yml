@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  publicacion: 2015-10-28
+  precio: 9.99
+  artista_id: 
+  discografica_id: 
+
+two:
+  nombre: MyString
+  publicacion: 2015-10-28
+  precio: 9.99
+  artista_id: 
+  discografica_id: 

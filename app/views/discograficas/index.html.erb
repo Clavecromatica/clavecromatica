@@ -1,0 +1,27 @@
+<h1>Listing discograficas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @discograficas.each do |discografica| %>
+      <tr>
+        <td><%= discografica.nombre %></td>
+        <td><%= discografica.descripcion %></td>
+        <td><%= link_to 'Show', discografica %></td>
+        <td><%= link_to 'Edit', edit_discografica_path(discografica) %></td>
+        <td><%= link_to 'Destroy', discografica, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Discografica', new_discografica_path %>
