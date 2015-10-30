@@ -39,3 +39,4 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap_form'
 gem 'bootstrap-sass', '~> 3.3.5'
+gem 'carrierwave' # Gestión de imagenes

@@ -4,7 +4,7 @@ class DiscosController < ApplicationController
   # GET /discos
   # GET /discos.json
   def index
-    @discos = Disco.all
+    @generos = Genero.all
   end
 
   # GET /discos/1
@@ -69,6 +69,6 @@ class DiscosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def disco_params
-      params.require(:disco).permit(:nombre, :publicacion, :precio, :artista_id, :discografica_id)
+      params.require(:disco).permit(:nombre, :publicacion, :precio, :artista_id, :discografica_id, :portada_delantera, :portada_trasera, :genero_id)
     end
 end
