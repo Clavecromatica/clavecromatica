@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :canciones
+
+  resources :ventas
+
+  resources :cancions
+
+  resources :clientes
+
+  resources :costumers
+
   resources :artistas
 
   resources :discos

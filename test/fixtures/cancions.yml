@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: 
+  duracion: 
+  precio: 9.99
+  disco: 
+
+two:
+  nombre: 
+  duracion: 
+  precio: 9.99
+  disco: 
