@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :canciones
+
+  resources :ventas
+
+  resources :cancions
+
+  resources :clientes
+
+  resources :costumers
+
   resources :artistas
 
   resources :discos
@@ -9,8 +19,6 @@ Rails.application.routes.draw do
 
   resources :generos
   get 'prueba/:id' =>  'generos#edit', as: :editar_genero
-  
-  root 'discos#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

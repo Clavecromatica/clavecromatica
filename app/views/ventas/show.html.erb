@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @venta.fecha %>
+</p>
+
+<p>
+  <strong>Descuento:</strong>
+  <%= @venta.descuento %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @venta.cliente %>
+</p>
+
+<p>
+  <strong>Disco:</strong>
+  <%= @venta.disco %>
+</p>
+
+<p>
+  <strong>Cancion:</strong>
+  <%= @venta.cancion %>
+</p>
+
+<%= link_to 'Edit', edit_venta_path(@venta) %> |
+<%= link_to 'Back', ventas_path %>
