@@ -3,9 +3,9 @@ class CreateVentas < ActiveRecord::Migration
     create_table :ventas do |t|
       t.date :fecha
       t.decimal :descuento
-      t.reference :cliente
-      t.reference :disco
-      t.reference :cancion
+      t.references :cliente
+      t.references :disco
+      t.references :cancion
 
       t.timestamps
     end

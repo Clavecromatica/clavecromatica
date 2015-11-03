@@ -6,7 +6,7 @@
       <th>Nombre</th>
       <th>Duracion</th>
       <th>Precio</th>
-      <th>Disco</th>
+      <th>Reference</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +17,7 @@
         <td><%= cancion.nombre %></td>
         <td><%= cancion.duracion %></td>
         <td><%= cancion.precio %></td>
-        <td><%= cancion.disco %></td>
+        <td><%= cancion.reference %></td>
         <td><%= link_to 'Show', cancion %></td>
         <td><%= link_to 'Edit', edit_cancion_path(cancion) %></td>
         <td><%= link_to 'Destroy', cancion, method: :delete, data: { confirm: 'Are you sure?' } %></td>

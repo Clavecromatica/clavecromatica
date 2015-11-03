@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  nombre: 
-  duracion: 
+  nombre: MyString
+  duracion: 1
   precio: 9.99
-  disco: 
+  reference: 
 
 two:
-  nombre: 
-  duracion: 
+  nombre: MyString
+  duracion: 1
   precio: 9.99
-  disco: 
+  reference: 

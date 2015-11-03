@@ -1,10 +1,10 @@
 class CreateCanciones < ActiveRecord::Migration
   def change
     create_table :canciones do |t|
-      t.String :nombre
-      t.int :duracion
+      t.string :nombre
+      t.integer :duracion
       t.decimal :precio
-      t.reference :disco
+      t.references :disco
 
       t.timestamps
     end

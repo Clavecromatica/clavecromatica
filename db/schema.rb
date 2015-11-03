@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151029022729) do
+ActiveRecord::Schema.define(version: 20151103184108) do
 
   create_table "artista", force: true do |t|
     t.string   "nombre"
@@ -27,6 +27,26 @@ ActiveRecord::Schema.define(version: 20151029022729) do
     t.text     "descripcion"
     t.date     "fecha_origen"
     t.string   "web"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "canciones", force: true do |t|
+    t.string   "nombre"
+    t.integer  "duracion"
+    t.decimal  "precio"
+    t.integer  "disco_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "clientes", force: true do |t|
+    t.string   "nombre"
+    t.string   "apellido_paterno"
+    t.string   "apellido_materno"
+    t.string   "direccion"
+    t.text     "password"
+    t.text     "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,6 +74,16 @@ ActiveRecord::Schema.define(version: 20151029022729) do
   create_table "generos", force: true do |t|
     t.string   "nombre"
     t.text     "descripcion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ventas", force: true do |t|
+    t.date     "fecha"
+    t.decimal  "descuento"
+    t.integer  "cliente_id"
+    t.integer  "disco_id"
+    t.integer  "cancion_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
