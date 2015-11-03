@@ -4,7 +4,9 @@ class DiscosController < ApplicationController
   # GET /discos
   # GET /discos.json
   def index
-    @generos = Genero.all
+    @generos = Genero.all.order(:nombre).first(6)
+    @artistas = Artista.all.order(:nombre).first(12)
+    @discos = Disco.all.order(:nombre).first(12)
   end
 
   # GET /discos/1
