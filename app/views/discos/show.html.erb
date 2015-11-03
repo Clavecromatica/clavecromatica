@@ -24,6 +24,8 @@
   <strong>Discografica:</strong>
   <%= @disco.discografica.nombre %>
 </p>
+<strong>Portada: </strong>
+<%= image_tag @disco.portada_delantera %>
 
 <%= link_to 'Edit', edit_disco_path(@disco) %> |
 <%= link_to 'Back', discos_path %>

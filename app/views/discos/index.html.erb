@@ -1,33 +1,46 @@
-<h1>Listing discos</h1>
+<div class="jumbotron text-center">		
+	<h1 class="text-center text-primary" id='titulo'>Clave Crómatica</h1>
+	<p>Tu espacio para comprar de música en todo tipo de formato</p>
+</div>
+<div class="page-header">
+	<h2 class="text-primary">Géneros</h2>
+	<div class="row">
+		<% @generos.each do |g|%>
+			<div class="col-sm-2 text-center">
+				<h4><%= g.nombre  %></h4>
+				<%= image_tag g.imagen, class: 'img-responsive img-catalogo' %>
+			</div>
+		<% end %>	
+	</div>
+	<hr />
+	<div class="text-center"><%= button_to "Ver más géneros", "", method: :get, class: 'btn btn-default center-block'%></div>
+</div>
+<div class="page-header">
+	<h2 class="text-primary">Artistas</h2>
+	<div class="row">
+		<% @artistas.each do |a|%>
+			<div class="col-sm-2 text-center">
+				<h4><%= a.nombre  %></h4>
+				<%= image_tag a.imagen, class: 'img-responsive img-catalogo' %>
+			</div>
+		<% end %>	
+	</div>
+	<div class="text-center"><%= button_to "Ver más artistas", "", method: :get, class: 'btn btn-default center-block'%></div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Nombre</th>
-      <th>Publicacion</th>
-      <th>Precio</th>
-      <th>Artista</th>
-      <th>Discografica</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+</div>
+<div class="page-header">
+	<h2 class="text-primary">Discos populares</h2>
+	<div class="row">
+		<% @discos.each do |d|%>
+			<div class="col-sm-2 text-center">
+				<h4><%= d.nombre  %></h4>
+				<%= image_tag d.portada_delantera, class: 'img-responsive img-catalogo' %>
+				<%= link_to "Editar", edit_disco_path(d) %>
+			</div>
+		<% end %>	
+	</div>
+	<div class="text-center"><%= button_to "Ver más discos", "", method: :get, class: 'btn btn-default center-block'%></div>
 
-  <tbody>
-    <% @discos.each do |disco| %>
-      <tr>
-        <td><%= disco.nombre %></td>
-        <td><%= disco.publicacion %></td>
-        <td><%= disco.precio %></td>
-        <td><%= disco.artista %></td>
-        <td><%= disco.discografica %></td>
-        <td><%= link_to 'Show', disco %></td>
-        <td><%= link_to 'Edit', edit_disco_path(disco) %></td>
-        <td><%= link_to 'Destroy', disco, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+</div>
 
-<br>
-
-<%= link_to 'New Disco', new_disco_path %>
+<%= button_to 'Agregar disco', new_disco_path, class: 'btn btn-primary center-block', method: :get %>
