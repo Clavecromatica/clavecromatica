@@ -1,4 +1,4 @@
-<h1>Listing canciones</h1>
+<h1>Lista de canciones</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= cancion.duracion %></td>
         <td><%= cancion.precio %></td>
         <td><%= cancion.reference %></td>
-        <td><%= link_to 'Show', cancion %></td>
-        <td><%= link_to 'Edit', edit_cancion_path(cancion) %></td>
-        <td><%= link_to 'Destroy', cancion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', cancion %></td>
+        <td><%= link_to 'Editar', edit_cancion_path(cancion) %></td>
+        <td><%= link_to 'Borrar', cancion, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Cancion', new_cancion_path %>
+<%= button_to 'Nueva Canción', new_cancion_path, class: 'btn btn-primary center-block', method: :get %>

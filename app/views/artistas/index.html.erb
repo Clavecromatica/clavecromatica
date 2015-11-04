@@ -1,4 +1,4 @@
-<h1>Listing artistas</h1>
+<h1>Lista de artistas</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= artista.descripcion %></td>
         <td><%= artista.fecha_origen %></td>
         <td><%= artista.web %></td>
-        <td><%= link_to 'Show', artista %></td>
-        <td><%= link_to 'Edit', edit_artista_path(artista) %></td>
-        <td><%= link_to 'Destroy', artista, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', artista %></td>
+        <td><%= link_to 'Editar', edit_artista_path(artista) %></td>
+        <td><%= link_to 'Borrar', artista, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Artista', new_artista_path %>
+<%= button_to 'Agregar Artista', new_artista_path, class: 'btn btn-primary center-block', method: :get %>

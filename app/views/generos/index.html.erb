@@ -1,4 +1,4 @@
-<h1>Listing generos</h1>
+<h1>Lista de generos</h1>
 
 <table>
   <thead>
@@ -14,9 +14,9 @@
       <tr>
         <td><%= genero.nombre %></td>
         <td><%= genero.descripcion %></td>
-        <td><%= link_to 'Show', genero %></td>
-        <td><%= link_to 'Edit', edit_genero_path(genero) %></td>
-        <td><%= link_to 'Destroy', genero, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', genero %></td>
+        <td><%= link_to 'Editar', edit_genero_path(genero) %></td>
+        <td><%= link_to 'Borrar', genero, method: :delete, data: { confirm: 'Está usted seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Genero', new_genero_path %>
+<%= button_to 'Nuevo Genero', new_genero_path, class: 'btn btn-primary center-block', method: :get  %>

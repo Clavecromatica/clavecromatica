@@ -1,4 +1,4 @@
-<h1>Listing clientes</h1>
+<h1>Lista de clientes</h1>
 
 <table>
   <thead>
@@ -22,9 +22,9 @@
         <td><%= cliente.direccion %></td>
         <td><%= cliente.password %></td>
         <td><%= cliente.email %></td>
-        <td><%= link_to 'Show', cliente %></td>
-        <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
-        <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', cliente %></td>
+        <td><%= link_to 'Editar', edit_cliente_path(cliente) %></td>
+        <td><%= link_to 'Borrar', cliente, method: :delete, data: { confirm: 'Esta usted seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Cliente', new_cliente_path %>
+<%= button_to 'Nuevo Cliente', new_cliente_path, class: 'btn btn-primary center-block', method: :get %>
