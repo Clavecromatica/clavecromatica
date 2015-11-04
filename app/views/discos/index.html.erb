@@ -2,41 +2,60 @@
 	<h2 class="text-primary">Géneros</h2>
 	<div class="row">
 		<% @generos.each do |g|%>
-			<div class="col-sm-2 text-center">
-				<h4><%= g.nombre  %></h4>
-				<%= image_tag g.imagen, class: 'img-responsive img-catalogo' %>
-			</div>
-		<% end %>	
+		<div class="col-sm-2 text-center">
+			<h4><%= g.nombre  %></h4>
+			<%= image_tag g.imagen, class: 'img-responsive img-catalogo' %>
+		</div>
+		<% end %>
 	</div>
 	<hr />
-	<div class="text-center"><%= button_to "Ver más géneros", "", method: :get, class: 'btn btn-default center-block'%></div>
+	<div class="text-center">
+		<%= button_to "Ver más géneros", "", method: :get, class: 'btn btn-default center-block'%>
+	</div>
 </div>
 <div class="page-header">
 	<h2 class="text-primary">Artistas</h2>
 	<div class="row">
 		<% @artistas.each do |a|%>
-			<div class="col-sm-2 text-center">
-				<h4><%= a.nombre  %></h4>
-				<%= image_tag a.imagen, class: 'img-responsive img-catalogo' %>
-			</div>
-		<% end %>	
+		<div class="col-sm-2 text-center">
+			<h4><%= a.nombre  %></h4>
+			<%= image_tag a.imagen, class: 'img-responsive img-catalogo' %>
+		</div>
+		<% end %>
 	</div>
-	<div class="text-center"><%= button_to "Ver más artistas", "", method: :get, class: 'btn btn-default center-block'%></div>
+	<div class="text-center">
+		<%= button_to "Ver más artistas", "", method: :get, class: 'btn btn-default center-block'%>
+	</div>
 
 </div>
 <div class="page-header">
 	<h2 class="text-primary">Discos populares</h2>
-	<div class="row">
-		<% @discos.each do |d|%>
-			<div class="col-sm-2 text-center">
-				<h4><%= d.nombre  %></h4>
-				<%= image_tag d.portada_delantera, class: 'img-responsive img-catalogo' %>
-				<%= link_to "Editar", edit_disco_path(d) %>
-			</div>
-		<% end %>	
-	</div>
-	<div class="text-center"><%= button_to "Ver más discos", "", method: :get, class: 'btn btn-default center-block'%></div>
+	<%  @discos.in_groups_of(6, false) do |dg| %>
+	<div class="row" style="height: 200px">
 
+		<% dg.each do |d|%>
+		<div class="col-sm-2">
+
+			<h4 class="text-center"><%= d.nombre  %></h4>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class=" text-center front">
+						<%= image_tag d.portada_delantera, class: 'img-responsive img-catalogo' %>
+					</div>
+					<div class="text-center back">
+						<%= image_tag d.portada_trasera, class: 'img-responsive img-catalogo' %>
+					</div>
+				</div>
+			</div>
+		</div>
+		<% end %>
+
+	</div>
+	<% end %>
+	<div class="text-center">
+		<%= button_to "Ver más discos", "", method: :get, class: 'btn btn-default center-block'%>
+	</div>
 </div>
 
 <%= button_to 'Agregar disco', new_disco_path, class: 'btn btn-primary center-block', method: :get %>
+
