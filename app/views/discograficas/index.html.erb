@@ -1,4 +1,4 @@
-<h1>Listing discograficas</h1>
+<h1>Lista de discograficas</h1>
 
 <table>
   <thead>
@@ -14,9 +14,9 @@
       <tr>
         <td><%= discografica.nombre %></td>
         <td><%= discografica.descripcion %></td>
-        <td><%= link_to 'Show', discografica %></td>
-        <td><%= link_to 'Edit', edit_discografica_path(discografica) %></td>
-        <td><%= link_to 'Destroy', discografica, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', discografica %></td>
+        <td><%= link_to 'Editar', edit_discografica_path(discografica) %></td>
+        <td><%= link_to 'Borrar', discografica, method: :delete, data: { confirm: 'Esta usted Seguro' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Discografica', new_discografica_path %>
+<%= button_to 'Nueva Discografica', new_discografica_path, class: 'btn btn-primary center-block', method: :get  %>

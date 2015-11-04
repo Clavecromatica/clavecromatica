@@ -3,8 +3,6 @@ Rails.application.routes.draw do
 
   resources :ventas
 
-  resources :cancions
-
   resources :clientes
 
   resources :costumers
