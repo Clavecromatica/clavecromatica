@@ -4,3 +4,4 @@ tmp
 tmp
 tmp/cache/assets/development/sprockets/6e1bd95023705b5529e7ccc754a02867
 db/development.sqlite3
+log/development.log
