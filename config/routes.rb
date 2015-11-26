@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   resources :generos
   get 'prueba/:id' =>  'generos#edit', as: :editar_genero
-  root 'discos#index'
+  root 'discos#index' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
