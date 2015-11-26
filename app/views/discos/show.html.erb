@@ -1,31 +1,23 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Nombre:</strong>
-  <%= @disco.nombre %>
-</p>
-
-<p>
-  <strong>Publicacion:</strong>
-  <%= @disco.publicacion %>
-</p>
-
-<p>
-  <strong>Precio:</strong>
-  <%= @disco.precio %>
-</p>
-
-<p>
-  <strong>Artista:</strong>
-  <%= @disco.artista.nombre %>
-</p>
-
-<p>
-  <strong>Discografica:</strong>
-  <%= @disco.discografica.nombre %>
-</p>
-<strong>Portada: </strong>
-<%= image_tag @disco.portada_delantera %>
-
-<%= link_to 'Editar', edit_disco_path(@disco) %> |
-<%= link_to 'Atrás', discos_path %>
+<div class="text-center">
+	<%= image_tag @disco.portada_delantera, class: 'portada' %>
+	<h1><%= @disco.nombre %>
+		<br /><small><%= link_to @disco.artista.nombre, @disco.artista %></small>
+	</h1>
+</div>
+<div class="page-header">
+	<h2>Canciones</h2>
+</div>
+<table class="table table-hover table-striped">
+	<tr>
+		<th>Canciones</th>
+		<th>Artista</th>
+		<th class="text-center">Duración</th>
+	</tr>
+	<% @canciones.each do |c| %>
+		<tr>
+			<td><%= c.nombre %></td>
+			<td><%= link_to c.disco.artista.nombre, c.disco.artista %></td>
+			<td class="text-center"><%= mostrar_duracion(c.duracion) %></td>
+		</tr>
+	<% end %>
+</table>

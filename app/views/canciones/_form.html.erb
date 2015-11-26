@@ -3,6 +3,7 @@
   	<%= f.text_field :nombre %>
     <%= f.number_field :duracion %>
     <%= f.text_field :precio, prepend: "$", append: ".00" %>
+    <%= f.select :disco_id, options_for_select(Disco.all.map { |d| [d.nombre, d.id] }) %>
     <%= f.submit %>
  
 <% end %>

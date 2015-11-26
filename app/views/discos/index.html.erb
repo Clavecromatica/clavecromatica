@@ -38,14 +38,16 @@
 
 			<h4 class="text-center"><%= d.nombre  %></h4>
 			<div class="flip-container">
-				<div class="flipper">
-					<div class=" text-center front">
-						<%= image_tag d.portada_delantera, class: 'img-responsive img-catalogo' %>
+				<%= link_to d do %>
+					<div class="flipper">
+						<div class=" text-center front">
+							<%= image_tag d.portada_delantera, class: 'img-responsive img-catalogo' %>
+						</div>
+						<div class="text-center back">
+							<%= image_tag d.portada_trasera, class: 'img-responsive img-catalogo' %>
+						</div>
 					</div>
-					<div class="text-center back">
-						<%= image_tag d.portada_trasera, class: 'img-responsive img-catalogo' %>
-					</div>
-				</div>
+				<% end %>
 			</div>
 		</div>
 		<% end %>

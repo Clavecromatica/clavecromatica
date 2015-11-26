@@ -10,6 +10,7 @@ class ArtistasController < ApplicationController
   # GET /artistas/1
   # GET /artistas/1.json
   def show
+    @discos = @artista.discos.order(:publicacion => :desc)
   end
 
   # GET /artistas/new

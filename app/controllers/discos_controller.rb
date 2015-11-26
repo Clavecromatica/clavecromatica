@@ -12,6 +12,7 @@ class DiscosController < ApplicationController
   # GET /discos/1
   # GET /discos/1.json
   def show
+    @canciones = @disco.canciones
   end
 
   # GET /discos/new
