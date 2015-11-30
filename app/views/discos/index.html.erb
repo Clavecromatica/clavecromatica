@@ -18,8 +18,10 @@
 	<div class="row">
 		<% @artistas.each do |a|%>
 		<div class="col-sm-2 text-center">
+			<%= link_to a do %>
 			<h4><%= a.nombre  %></h4>
-			<%= image_tag a.imagen, class: 'img-responsive img-catalogo' %>
+				<%= image_tag a.imagen, class: 'img-responsive img-catalogo' %>
+			<% end %>
 		</div>
 		<% end %>
 	</div>
