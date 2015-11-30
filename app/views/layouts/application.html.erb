@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ClaveCromatica</title>
+			
+		
 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-		<%= csrf_meta_tags %>
+		
+		<%= display_meta_tags site: 'Clave cromática' %>
+		<%=	display_meta_tags author: ["Marco Baquera","Hipolito Rodriguez", "Irma Rivera"]%>
+		<%= display_meta_tags keywords:["Musica, Disco, Cancion, Tienda, Album, Pista, pop, rock, genero"]%>
+		<%= display_meta_tags description: "Tu espacio para comprar música en todo tipo de formato"%>
+		<%= display_meta_tags nofollow: true %>
+		<%= display_meta_tags nofollow: "googlebot" %>
+		<%= display_meta_tags refresh: 10 %>
 	</head>
 	<body>
 		<div class="container">

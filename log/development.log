@@ -35509,3 +35509,4655 @@ Processing by ArtistasController#show as HTML
   [1m[36mDisco Load (0.0ms)[0m  [1mSELECT "discos".* FROM "discos"  WHERE "discos"."artista_id" = ?  ORDER BY "discos"."publicacion" DESC[0m  [["artista_id", 1]]
   Rendered artistas/show.html.erb within layouts/application (24.0ms)
 Completed 200 OK in 573ms (Views: 569.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 13:34:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (4.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (0.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (114.0ms)
+Completed 200 OK in 58827ms (Views: 58540.3ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:36 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:36 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:36 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:36 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:37 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:35:39 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 13:35:39 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 13:35:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 13:37:30 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (0.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (102.0ms)
+Completed 200 OK in 1014ms (Views: 999.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:32 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 13:37:34 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 13:37:34 -0700
+
+
+Started GET "/generos" for 127.0.0.1 at 2015-11-26 13:38:13 -0700
+Processing by GenerosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT "generos".* FROM "generos"
+  Rendered generos/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 711ms (Views: 709.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 13:38:38 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (0.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 896ms (Views: 880.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 13:38:44 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (0.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 795ms (Views: 786.0ms | ActiveRecord: 2.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (19.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_discos_on_genero_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_discos_on_genero_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_discos_on_discografica_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_discos_on_discografica_id' AND type='index'
+
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_discos_on_artista_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_discos_on_artista_id' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 14:48:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (12.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (0.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (117.0ms)
+Completed 500 Internal Server Error in 3846ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+     5: 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+     6: 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+     7: 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+     8: 		<%= csrf_meta_tags title:'Clave-cromática'%>
+     9: 		<%= set_meta_tags title:'Clave-cromática'%>
+    10: 	</head>
+    11: 	<body>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__816499738_37466652'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 14:49:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (0.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (161.0ms)
+Completed 200 OK in 3730ms (Views: 3470.2ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:05 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:05 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:05 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:05 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:05 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:05 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:05 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:06 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 14:50:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:07 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:08 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:08 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:08 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:08 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:08 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:08 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:08 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:08 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 14:50:09 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 14:50:09 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 14:50:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 14:55:07 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (0.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (67.0ms)
+Completed 500 Internal Server Error in 1018ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+     5: 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+     6: 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+     7: 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+     8: 		<%= csrf_meta_tags title:'Clave-cromática'%>
+     9: 		<%= set_meta_tags title:'Clave-cromática'%>
+    10: 	</head>
+    11: 	<body>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__296367286_44211240'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 14:59:02 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 942ms (Views: 907.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:03 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:03 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:03 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:03 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:03 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:03 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:03 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:03 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 14:59:04 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 14:59:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:01:00 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 916ms (Views: 898.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 15:01:02 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 15:01:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:03:00 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 963ms (Views: 951.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:01 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:01 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:01 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:01 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:03:03 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 15:03:03 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 15:03:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:20:05 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (56.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (0.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 4451ms (Views: 4386.3ms | ActiveRecord: 57.0ms)
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:12 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 15:20:13 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 15:20:14 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 15:22:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:28:01 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (79.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (41.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (702.0ms)
+Completed 200 OK in 3762ms (Views: 3426.2ms | ActiveRecord: 121.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:07 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:07 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:07 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:07 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:07 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:07 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:07 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:07 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 15:28:08 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 15:28:10 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:29:43 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (180.0ms)
+Completed 200 OK in 1517ms (Views: 1405.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:45 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:45 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:45 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:45 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:45 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:45 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:45 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 15:29:46 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 15:29:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:38:41 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (76.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (101.0ms)
+Completed 500 Internal Server Error in 629ms
+
+SyntaxError (C:/Users/irma/Documents/Aptana Studio 3 Workspace/Clavecromatica/app/views/layouts/application.html.erb:11: syntax error, unexpected tLABEL
+..._buffer.append=( set_meta_tags: title=> 'Clave-cromática' )...
+...                               ^):
+  app/views/layouts/application.html.erb:11: syntax error, unexpected tLABEL
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (78.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (70.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (583.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:38:57 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (162.0ms)
+Completed 500 Internal Server Error in 340ms
+
+SyntaxError (C:/Users/irma/Documents/Aptana Studio 3 Workspace/Clavecromatica/app/views/layouts/application.html.erb:11: syntax error, unexpected tLABEL
+..._buffer.append=( set_meta_tags: title=> 'Clave-cromática' )...
+...                               ^):
+  app/views/layouts/application.html.erb:11: syntax error, unexpected tLABEL
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (126.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (106.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (47.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (595.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:39:07 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (0.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (0.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (210.0ms)
+Completed 500 Internal Server Error in 524ms
+
+SyntaxError (C:/Users/irma/Documents/Aptana Studio 3 Workspace/Clavecromatica/app/views/layouts/application.html.erb:11: syntax error, unexpected ':', expecting keyword_end
+'.freeze;		 set_meta_tags: title=> 'Clave-cromática' 
+         		               ^):
+  app/views/layouts/application.html.erb:11: syntax error, unexpected ':', expecting keyword_end
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (53.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (168.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (650.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:39:53 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (0.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (232.0ms)
+Completed 500 Internal Server Error in 3235ms
+
+ActionView::Template::Error (undefined method `Set_meta_tags' for #<#<Class:0x4865c28>:0x565f5c0>):
+     8: 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+     9: 		
+    10: 	
+    11: 		<% Set_meta_tags title: 'Clave-cromática' %>
+    12: 		<% set_meta_tags site: 'Site Title', title: 'Clave-cromatica'%>
+    13: 		
+    14: 	</head>
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__296367286_45277704'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (282.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (424.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 15:40:16 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (0.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (0.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (0.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 1469ms (Views: 1428.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 15:40:19 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 15:40:20 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 17:57:00 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (0.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 1350ms (Views: 1339.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:02 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 17:57:03 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 17:57:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:00:35 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (69.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (0.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (177.0ms)
+Completed 200 OK in 3111ms (Views: 2044.1ms | ActiveRecord: 75.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:00:43 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:00:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:01:27 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (0.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (71.0ms)
+Completed 200 OK in 1645ms (Views: 1631.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:29 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:30 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:30 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:30 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:30 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:01:30 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:01:30 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:01:30 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:01:31 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:13:49 -0700
+
+ActionController::RoutingError (undefined method `set_meta_tags' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/discos_controller.rb:1:in `<top (required)>'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (38.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (333.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (4182.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:15:02 -0700
+
+ActionController::RoutingError (undefined method `set_meta_tags' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/discos_controller.rb:1:in `<top (required)>'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (25.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (64.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (444.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:15:04 -0700
+
+ActionController::RoutingError (undefined method `set_meta_tags' for ApplicationController:Class):
+  app/controllers/application_controller.rb:5:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/discos_controller.rb:1:in `<top (required)>'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (54.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (186.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (112.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1108.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:15:14 -0700
+
+ArgumentError (Invalid request forgery protection method, use :null_session, :exception, or :reset_session):
+  app/controllers/application_controller.rb:4:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/discos_controller.rb:1:in `<top (required)>'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (27.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (93.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (61.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (383.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:15:33 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (5.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 2068ms (Views: 1487.1ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:36 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:36 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:36 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:36 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:36 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:36 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:36 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:15:37 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:15:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:18:05 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (0.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (0.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 903ms (Views: 892.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:06 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:07 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:18:08 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:23 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:23 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:23 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:24 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:24 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:24 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:24 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:24 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:18:37 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (0.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 2040ms (Views: 2031.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:39 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:40 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:41 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:41 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:41 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:41 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:41 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:18:41 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:18:41 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:18:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:19:40 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (0.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 1361ms (Views: 1342.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:42 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:19:43 -0700
+
+
+Started GET "/discos/new" for 127.0.0.1 at 2015-11-26 18:19:58 -0700
+Processing by DiscosController#new as HTML
+  Rendered discos/new.html.erb within layouts/application (257.0ms)
+Completed 500 Internal Server Error in 439ms
+
+ActionView::Template::Error (undefined local variable or method `disco' for #<#<Class:0x5445f48>:0x52b02a0>):
+    1: <h1><%= title Nuevo disco %></h1>
+    2: 
+    3: <%= render 'form' %>
+    4: 
+  app/views/discos/new.html.erb:1:in `_app_views_discos_new_html_erb__114663454_43341948'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.0ms)
+
+
+Started GET "/discos/new" for 127.0.0.1 at 2015-11-26 18:20:09 -0700
+Processing by DiscosController#new as HTML
+  [1m[35mArtista Load (1.0ms)[0m  SELECT "artistas".* FROM "artistas"
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT "generos".* FROM "generos"[0m
+  [1m[35mDiscografica Load (1.0ms)[0m  SELECT "discograficas".* FROM "discograficas"
+  Rendered discos/_form.html.erb (3012.2ms)
+  Rendered discos/new.html.erb within layouts/application (3019.2ms)
+Completed 200 OK in 4535ms (Views: 4530.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:13 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:14 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:20:15 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:20:15 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:20:15 -0700
+
+
+Started GET "/discos/new" for 127.0.0.1 at 2015-11-26 18:27:50 -0700
+Processing by DiscosController#new as HTML
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT "artistas".* FROM "artistas"[0m
+  [1m[35mGenero Load (0.0ms)[0m  SELECT "generos".* FROM "generos"
+  [1m[36mDiscografica Load (0.0ms)[0m  [1mSELECT "discograficas".* FROM "discograficas"[0m
+  Rendered discos/_form.html.erb (39.0ms)
+  Rendered discos/new.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 940ms (Views: 938.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:51 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:51 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:51 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:51 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:51 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:51 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:51 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:27:52 -0700
+
+
+Started GET "/discos/edit" for 127.0.0.1 at 2015-11-26 18:28:01 -0700
+Processing by DiscosController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[35mDisco Load (0.0ms)[0m  SELECT  "discos".* FROM "discos"  WHERE "discos"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 116ms
+
+ActiveRecord::RecordNotFound (Couldn't find Disco with 'id'=edit):
+  app/controllers/discos_controller.rb:71:in `set_disco'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (130.0ms)
+
+
+Started GET "/discos" for 127.0.0.1 at 2015-11-26 18:28:05 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (0.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 880ms (Views: 870.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:06 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:06 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:07 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:28:08 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:28:08 -0700
+
+
+Started GET "/discos/10" for 127.0.0.1 at 2015-11-26 18:28:30 -0700
+Processing by DiscosController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"  WHERE "discos"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"  WHERE "artistas"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCancion Load (1.0ms)[0m  SELECT "canciones".* FROM "canciones"  WHERE "canciones"."disco_id" = ?  [["disco_id", 10]]
+  Rendered discos/show.html.erb within layouts/application (692.0ms)
+Completed 200 OK in 2240ms (Views: 1375.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/discos/10" for 127.0.0.1 at 2015-11-26 18:28:33 -0700
+Processing by DiscosController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"  WHERE "discos"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"  WHERE "artistas"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCancion Load (0.0ms)[0m  [1mSELECT "canciones".* FROM "canciones"  WHERE "canciones"."disco_id" = ?[0m  [["disco_id", 10]]
+  Rendered discos/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 940ms (Views: 935.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/discos/10/edit" for 127.0.0.1 at 2015-11-26 18:28:49 -0700
+Processing by DiscosController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mDisco Load (0.0ms)[0m  SELECT  "discos".* FROM "discos"  WHERE "discos"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT "artistas".* FROM "artistas"[0m
+  [1m[35mGenero Load (1.0ms)[0m  SELECT "generos".* FROM "generos"
+  [1m[36mDiscografica Load (1.0ms)[0m  [1mSELECT "discograficas".* FROM "discograficas"[0m
+  Rendered discos/_form.html.erb (146.0ms)
+  Rendered discos/edit.html.erb within layouts/application (154.0ms)
+Completed 200 OK in 1005ms (Views: 998.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:28:51 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:28:52 -0700
+
+
+Started GET "/canciones/1/edit" for 127.0.0.1 at 2015-11-26 18:36:51 -0700
+Processing by CancionesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCancion Load (1.0ms)[0m  SELECT  "canciones".* FROM "canciones"  WHERE "canciones"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mDisco Load (0.0ms)[0m  [1mSELECT "discos".* FROM "discos"[0m
+  Rendered canciones/_form.html.erb (41.0ms)
+  Rendered canciones/edit.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 1439ms (Views: 1311.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:53 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:36:54 -0700
+
+
+Started GET "/canciones/new" for 127.0.0.1 at 2015-11-26 18:37:04 -0700
+Processing by CancionesController#new as HTML
+  [1m[35mDisco Load (1.0ms)[0m  SELECT "discos".* FROM "discos"
+  Rendered canciones/_form.html.erb (9.0ms)
+  Rendered canciones/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 838ms (Views: 836.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:05 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:05 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:05 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:05 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:05 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:37:06 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:37:07 -0700
+
+
+Started GET "/genero/new" for 127.0.0.1 at 2015-11-26 18:37:19 -0700
+
+ActionController::RoutingError (No route matches [GET] "/genero/new"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (175.0ms)
+
+
+Started GET "/generos/" for 127.0.0.1 at 2015-11-26 18:37:29 -0700
+Processing by GenerosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT "generos".* FROM "generos"[0m
+  Rendered generos/index.html.erb within layouts/application (153.0ms)
+Completed 200 OK in 1517ms (Views: 1515.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:31 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:37:32 -0700
+
+
+Started GET "/generos/new" for 127.0.0.1 at 2015-11-26 18:37:40 -0700
+Processing by GenerosController#new as HTML
+  Rendered generos/_form.html.erb (7.0ms)
+  Rendered generos/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 1171ms (Views: 1170.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:41 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:37:42 -0700
+
+
+Started GET "/discografica/new" for 127.0.0.1 at 2015-11-26 18:37:54 -0700
+
+ActionController::RoutingError (No route matches [GET] "/discografica/new"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (23.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (180.0ms)
+
+
+Started GET "/discografia/new" for 127.0.0.1 at 2015-11-26 18:38:02 -0700
+
+ActionController::RoutingError (No route matches [GET] "/discografia/new"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (170.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:38:09 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (113.0ms)
+Completed 200 OK in 971ms (Views: 896.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:10 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:10 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:10 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:10 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:10 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:10 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:10 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:38:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 18:55:06 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (2.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (0.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (179.0ms)
+Completed 200 OK in 2273ms (Views: 2210.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:08 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:08 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:09 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 18:55:10 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:24 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:25 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:25 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:25 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:25 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:25 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:25 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:25 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 18:56:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 19:01:22 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (0.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (0.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (244.0ms)
+Completed 200 OK in 1745ms (Views: 1672.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:24 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:25 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 19:01:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 19:01:55 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (322.0ms)
+Completed 200 OK in 1593ms (Views: 1579.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:56 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:56 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 19:01:57 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 19:01:58 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 19:01:58 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 19:02:54 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (0.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (103.0ms)
+Completed 200 OK in 1360ms (Views: 1344.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:56 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 19:02:57 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:57 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 19:02:57 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 19:02:57 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 19:03:47 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (0.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (2.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (145.0ms)
+Completed 200 OK in 1159ms (Views: 1146.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 19:03:49 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 19:03:50 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 19:05:15 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (34.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (168.0ms)
+Completed 200 OK in 2099ms (Views: 2026.1ms | ActiveRecord: 36.0ms)
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:18 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 19:05:19 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 19:05:20 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 19:05:36 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (16.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 1779ms (Views: 1730.1ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:38 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-26 19:05:39 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-30 13:26:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (101.0ms)
+Completed 200 OK in 3435ms (Views: 3090.2ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:31 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:31 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:31 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:31 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:32 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-30 13:26:33 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-30 13:26:35 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-30 13:37:15 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (1.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 1426ms (Views: 1294.1ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-30 13:41:35 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (2.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 1081ms (Views: 965.1ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-30 13:44:06 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (1.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (0.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (101.0ms)
+Completed 200 OK in 1230ms (Views: 1180.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-30 13:44:12 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (131.0ms)
+Completed 200 OK in 1478ms (Views: 1324.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-30 13:53:30 -0700
+Processing by DiscosController#index as HTML
+  [1m[36mGenero Load (0.0ms)[0m  [1mSELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6[0m
+  [1m[35mArtista Load (0.0ms)[0m  SELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12
+  [1m[36mDisco Load (1.0ms)[0m  [1mSELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12[0m
+  Rendered discos/index.html.erb within layouts/application (120.0ms)
+Completed 200 OK in 1992ms (Views: 1947.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/generos" for 127.0.0.1 at 2015-11-30 13:58:07 -0700
+Processing by GenerosController#index as HTML
+  [1m[35mGenero Load (0.0ms)[0m  SELECT "generos".* FROM "generos"
+  Rendered generos/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 742ms (Views: 742.0ms | ActiveRecord: 0.0ms)
