@@ -35509,3 +35509,215 @@ Processing by ArtistasController#show as HTML
   [1m[36mDisco Load (0.0ms)[0m  [1mSELECT "discos".* FROM "discos"  WHERE "discos"."artista_id" = ?  ORDER BY "discos"."publicacion" DESC[0m  [["artista_id", 1]]
   Rendered artistas/show.html.erb within layouts/application (24.0ms)
 Completed 200 OK in 573ms (Views: 569.0ms | ActiveRecord: 1.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20151129214837)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151129214837"]]
+  [1m[36m (46.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_discos_on_genero_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_discos_on_genero_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_discos_on_discografica_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_discos_on_discografica_id' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_discos_on_artista_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_discos_on_artista_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 16:02:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 6447ms (Views: 6208.6ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/artistas.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:53 -0700
+
+
+Started GET "/assets/artista.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:53 -0700
+
+
+Started GET "/assets/canciones.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:53 -0700
+
+
+Started GET "/assets/clientes.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:53 -0700
+
+
+Started GET "/assets/discograficas.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:53 -0700
+
+
+Started GET "/assets/discos.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/generos.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/ventas.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/artista.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/artistas.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/canciones.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/clientes.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/discograficas.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/discos.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/generos.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/ventas.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:54 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:55 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:55 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:55 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:55 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:55 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-29 16:02:55 -0700
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-11-29 16:02:55 -0700
+
+
+Started GET "/assets/fondo.jpg" for 127.0.0.1 at 2015-11-29 16:02:55 -0700
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-11-29 16:03:58 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.0.0/lib/ruby/gems/2.0.0/gems/devise-3.5.2/app/views/devise/registrations/new.html.erb within layouts/application (317.0ms)
+Completed 200 OK in 1083ms (Views: 1069.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-11-29 16:04:33 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ihtROpbho84Hgh/KTPxtoJakFpNj597rWJ5Am4NaEU4=", "user"=>{"email"=>"prhiroal@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'prhiroal@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-11-29 23:04:33.936178"], ["email", "prhiroal@gmail.com"], ["encrypted_password", "$2a$10$if0GjfzOerbG6mB/J/dWqOfwaJMot/SGyzdHYCyKHt1LB10hTtyPa"], ["updated_at", "2015-11-29 23:04:33.936178"]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (2.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2015-11-29 23:04:33.957180"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2015-11-29 23:04:33.957180"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2015-11-29 23:04:33.960181"]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 413ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 16:04:34 -0700
+Processing by DiscosController#index as HTML
+  [1m[35mGenero Load (1.0ms)[0m  SELECT  "generos".* FROM "generos"   ORDER BY "generos"."nombre" ASC LIMIT 6
+  [1m[36mArtista Load (1.0ms)[0m  [1mSELECT  "artistas".* FROM "artistas"   ORDER BY "artistas"."nombre" ASC LIMIT 12[0m
+  [1m[35mDisco Load (1.0ms)[0m  SELECT  "discos".* FROM "discos"   ORDER BY "discos"."nombre" ASC LIMIT 12
+  Rendered discos/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 952ms (Views: 938.1ms | ActiveRecord: 3.0ms)
