@@ -15,9 +15,8 @@
     <% @canciones.each do |cancion| %>
       <tr>
         <td><%= cancion.nombre %></td>
-        <td><%= cancion.duracion %></td>
+        <td><%= mostrar_duracion(cancion.duracion) %></td>
         <td><%= cancion.precio %></td>
-        <td><%= cancion.reference %></td>
         <td><%= link_to 'Ver', cancion %></td>
         <td><%= link_to 'Editar', edit_cancion_path(cancion) %></td>
         <td><%= link_to 'Borrar', cancion, method: :delete, data: { confirm: 'Estas seguro?' } %></td>

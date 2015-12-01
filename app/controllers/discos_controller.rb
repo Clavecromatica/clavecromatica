@@ -4,15 +4,21 @@ class DiscosController < ApplicationController
   # GET /discos
   # GET /discos.json
   def index
-    @generos = Genero.all.order(:nombre).first(6)
-    @artistas = Artista.all.order(:nombre).first(12)
-    @discos = Disco.all.order(:nombre).first(12)
+    @generos = Genero.all
+    if params[:genero_id].nil?
+      @genero = Genero.first
+    else
+      @genero = Genero.find_by(id: params[:genero_id])
+    end
+    @discos = @genero.discos.order(:nombre => :asc)
+    
   end
 
   # GET /discos/1
   # GET /discos/1.json
   def show
     @canciones = @disco.canciones
+    @duracion = @canciones.sum(:duracion)
   end
 
   # GET /discos/new

@@ -1,43 +1,30 @@
+<h1 class="text-primary">
+	Lista de discos<br />
+</h1>
 <div class="page-header">
-	<h2 class="text-primary">Géneros</h2>
-	<div class="row">
-		<% @generos.each do |g|%>
-		<div class="col-sm-2 text-center">
-			<h4><%= g.nombre  %></h4>
-			<%= image_tag g.imagen, class: 'img-responsive img-catalogo' %>
-		</div>
+	<h3>Buscar por géneros</h3>
+	<ul class="nav nav-pills">
+		<% @generos.each do |g| %>
+			<li role="presentation" class="<%= @genero == g ? "active" : nil %>"><%= link_to g.nombre, discos_por_genero_path(g) %></li>
 		<% end %>
-	</div>
-	<hr />
-	<div class="text-center">
-		<%= button_to "Ver más géneros", "", method: :get, class: 'btn btn-default center-block'%>
-	</div>
+	</ul>
 </div>
 <div class="page-header">
-	<h2 class="text-primary">Artistas</h2>
-	<div class="row">
-		<% @artistas.each do |a|%>
-		<div class="col-sm-2 text-center">
-			<h4><%= a.nombre  %></h4>
-			<%= image_tag a.imagen, class: 'img-responsive img-catalogo' %>
-		</div>
-		<% end %>
-	</div>
-	<div class="text-center">
-		<%= button_to "Ver más artistas", "", method: :get, class: 'btn btn-default center-block'%>
-	</div>
-
+	<h3 class="text-center"><%= @genero.nombre %></h3>
+	<%= image_tag @genero.imagen, class: 'portada center-block'%>
+	<p class="lead"><%= @genero.descripcion %></p>
 </div>
-<div class="page-header">
-	<h2 class="text-primary">Discos populares</h2>
-	<%  @discos.in_groups_of(6, false) do |dg| %>
+<h2 class="page-header">
+	Discos del género <%= @genero.nombre %>
+</h2>
+<%  @discos.in_groups_of(4, false) do |dg| %>
 	<div class="row" style="height: 200px">
 
 		<% dg.each do |d|%>
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 
 			<h4 class="text-center"><%= d.nombre  %></h4>
-			<div class="flip-container">
+			<div class="flip-container flip-container-canciones center-block">
 				<%= link_to d do %>
 					<div class="flipper">
 						<div class=" text-center front">
@@ -53,11 +40,4 @@
 		<% end %>
 
 	</div>
-	<% end %>
-	<div class="text-center">
-		<%= button_to "Ver más discos", "", method: :get, class: 'btn btn-default center-block'%>
-	</div>
-</div>
-
-<%= button_to 'Agregar disco', new_disco_path, class: 'btn btn-primary center-block', method: :get %>
-
+<% end %>

@@ -4,6 +4,16 @@
 		<br /><small><%= link_to @disco.artista.nombre, @disco.artista %></small>
 	</h1>
 </div>
+<div class="panel panel-primary">
+	<div class="panel-heading"><h4>Datos del disco</h4></div>
+	<div class="panel-body">
+		<b>Nombre: </b><%= @disco.nombre %><br />
+		<b>Discográfica: </b><%= @disco.discografica.nil? ? "Sin información" : @disco.discografica.nombre %><br />
+		<b>Año de publicación: </b><%= @disco.publicacion.strftime("%d/%m/%Y")%><br />
+		<b>Duración: </b><%= mostrar_duracion(@duracion) %>
+	</div>
+	
+</div>
 <div class="page-header">
 	<h2>Canciones</h2>
 </div>
@@ -21,3 +31,4 @@
 		</tr>
 	<% end %>
 </table>
+<%= button_to "Editar disco", edit_disco_path(@disco ), method: :get, class: 'btn btn-primary center-block'%>

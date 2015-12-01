@@ -1,20 +1,22 @@
-<div class="text-center">
+<div class="text-center text-primary">
 	<%= image_tag @artista.imagen, class: 'portada' %>
 	<h1><%= @artista.nombre %>
 		<br /><small><%= @artista.fecha_origen.strftime("Origen: %d/%m/%Y")%></small>
 	</h1>
+	
 </div>
+<p class="lead"><%= @artista.descripcion %></p>
 <div class="page-header">
 	<h2>Discos</h2>
 </div>
-<%  @discos.in_groups_of(6, false) do |dg| %>
+<%  @discos.in_groups_of(4, false) do |dg| %>
 	<div class="row" style="height: 200px">
 
 		<% dg.each do |d|%>
-		<div class="col-sm-2">
+		<div class="col-sm-3">
 
 			<h4 class="text-center"><%= d.nombre  %></h4>
-			<div class="flip-container">
+			<div class="flip-container flip-container-canciones center-block">
 				<%= link_to d do %>
 					<div class="flipper">
 						<div class=" text-center front">
@@ -31,3 +33,6 @@
 
 	</div>
 <% end %>
+<div class="text-center">
+	<%= link_to "Editar artista", edit_artista_path(@artista), class: 'btn btn-default'%>
+</div>
