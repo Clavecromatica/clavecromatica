@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
+  get 'welcome/politica_privacidad'
+
+  get 'welcome/politica_devoluciones'
+
+  get 'welcome/contactanos'
+  
   devise_for :users
+
   resources :canciones
 
   resources :ventas
@@ -18,7 +27,10 @@ Rails.application.routes.draw do
 
   resources :generos
   get 'prueba/:id' =>  'generos#edit', as: :editar_genero
-  root 'discos#index' 
+  
+  get 'discos/generos/(:genero_id)' => 'discos#index', as: :discos_por_genero
+  
+  root 'welcome#index' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
