@@ -42,3 +42,4 @@ gem 'bootstrap_form'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'carrierwave' # Gestión de imagenes
 gem 'meta-tags'#palabras clave 
+gem 'cancan'

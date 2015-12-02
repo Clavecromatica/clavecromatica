@@ -15,6 +15,7 @@ class CancionesController < ApplicationController
   # GET /canciones/new
   def new
     @cancion = Cancion.new
+    authorize! :create, @cancion
   end
 
   # GET /canciones/1/edit
@@ -27,6 +28,7 @@ class CancionesController < ApplicationController
     @cancion = Cancion.new(cancion_params)
 
     respond_to do |format|
+      authorize! :create, @cancion
       if @cancion.save
         format.html { redirect_to @cancion, notice: 'Cancion was successfully created.' }
         format.json { render :show, status: :created, location: @cancion }
@@ -41,6 +43,7 @@ class CancionesController < ApplicationController
   # PATCH/PUT /canciones/1.json
   def update
     respond_to do |format|
+      authorize! :create, @artista
       if @cancion.update(cancion_params)
         format.html { redirect_to @cancion, notice: 'Cancion was successfully updated.' }
         format.json { render :show, status: :ok, location: @cancion }
@@ -54,6 +57,7 @@ class CancionesController < ApplicationController
   # DELETE /canciones/1
   # DELETE /canciones/1.json
   def destroy
+    authorize! :create, @cancion
     @cancion.destroy
     respond_to do |format|
       format.html { redirect_to canciones_url, notice: 'Cancion was successfully destroyed.' }

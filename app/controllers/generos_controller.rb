@@ -15,6 +15,7 @@ class GenerosController < ApplicationController
   # GET /generos/new
   def new
     @genero = Genero.new
+    authorize! :create, @genero
   end
 
   # GET /generos/1/edit
@@ -27,6 +28,7 @@ class GenerosController < ApplicationController
     @genero = Genero.new(genero_params)
 
     respond_to do |format|
+      authorize! :create, @genero
       if @genero.save
         format.html { redirect_to @genero, notice: 'Genero was successfully created.' }
         format.json { render :show, status: :created, location: @genero }
@@ -41,6 +43,7 @@ class GenerosController < ApplicationController
   # PATCH/PUT /generos/1.json
   def update
     respond_to do |format|
+      authorize! :create, @genero
       if @genero.update(genero_params)
         format.html { redirect_to @genero, notice: 'Genero was successfully updated.' }
         format.json { render :show, status: :ok, location: @genero }
@@ -54,6 +57,7 @@ class GenerosController < ApplicationController
   # DELETE /generos/1
   # DELETE /generos/1.json
   def destroy
+    authorize! :create, @genero
     @genero.destroy
     respond_to do |format|
       format.html { redirect_to generos_url, notice: 'Genero was successfully destroyed.' }

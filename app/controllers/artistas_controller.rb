@@ -1,4 +1,5 @@
 class ArtistasController < ApplicationController
+  #load_and_authorize_resource
   before_action :set_artista, only: [:show, :edit, :update, :destroy]
 
   # GET /artistas
@@ -16,6 +17,7 @@ class ArtistasController < ApplicationController
   # GET /artistas/new
   def new
     @artista = Artista.new
+    authorize! :create, @artista
   end
 
   # GET /artistas/1/edit
@@ -28,6 +30,7 @@ class ArtistasController < ApplicationController
     @artista = Artista.new(artista_params)
 
     respond_to do |format|
+      authorize! :create, @artista
       if @artista.save
         format.html { redirect_to @artista, notice: 'Artista was successfully created.' }
         format.json { render :show, status: :created, location: @artista }

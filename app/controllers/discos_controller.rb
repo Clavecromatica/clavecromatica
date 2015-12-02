@@ -1,5 +1,5 @@
 class DiscosController < ApplicationController
-  before_action :set_disco, only: [:show, :edit, :update, :destroy]
+  before_action :set_disco, only: [:show, :edit, :update, :destroy, :add_item_to_shipping_cart]
 
   # GET /discos
   # GET /discos.json
@@ -24,6 +24,7 @@ class DiscosController < ApplicationController
   # GET /discos/new
   def new
     @disco = Disco.new
+    authorize! :create, @disco
   end
 
   # GET /discos/1/edit
@@ -36,6 +37,7 @@ class DiscosController < ApplicationController
     @disco = Disco.new(disco_params)
 
     respond_to do |format|
+      authorize! :create, @disco
       if @disco.save
         format.html { redirect_to @disco, notice: 'Disco was successfully created.' }
         format.json { render :show, status: :created, location: @disco }
@@ -50,6 +52,7 @@ class DiscosController < ApplicationController
   # PATCH/PUT /discos/1.json
   def update
     respond_to do |format|
+      authorize! :create, @disco
       if @disco.update(disco_params)
         format.html { redirect_to @disco, notice: 'Disco was successfully updated.' }
         format.json { render :show, status: :ok, location: @disco }
@@ -63,10 +66,25 @@ class DiscosController < ApplicationController
   # DELETE /discos/1
   # DELETE /discos/1.json
   def destroy
+    authorize! :create, @disco
     @disco.destroy
     respond_to do |format|
       format.html { redirect_to discos_url, notice: 'Disco was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def add_item_to_shipping_cart
+    if user_signed_in?
+      if cookies[:carrito].nil?
+        cookies[:carrito] = [@disco.id].to_json 
+        redirect_to @disco
+      else
+        @item = JSON.parse(cookies[:carrito])
+        @item << @disco.id
+        cookies[:carrito] = @item.to_json
+        redirect_to @disco
+      end
     end
   end
 

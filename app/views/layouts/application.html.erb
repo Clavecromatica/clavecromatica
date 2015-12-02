@@ -5,7 +5,7 @@
 		
 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', :defaults, 'data-turbolinks-track' => true %>
 		
 		<%= display_meta_tags site: 'Clave cromática' %>
 		<%=	display_meta_tags author: ["Marco Baquera","Hipolito Rodriguez", "Irma Rivera"]%>
@@ -13,7 +13,6 @@
 		<%= display_meta_tags description: "Tu espacio para comprar música en todo tipo de formato"%>
 		<%= display_meta_tags nofollow: true %>
 		<%= display_meta_tags nofollow: "googlebot" %>
-		<%= display_meta_tags refresh: 10 %>
 	</head>
 	<body>
 		<div class="container">
@@ -54,33 +53,46 @@
 								</ul>
 							</li>
 						</ul>
-						<form class="navbar-form navbar-left" role="search">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Search">
-							</div>
-							<button type="submit" class="btn btn-default">
-								Submit
-							</button>
-						</form>
 						<ul class="nav navbar-nav navbar-right">
 							<li>
 								<a href="#">Link</a>
 							</li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<% if user_signed_in? %> 
+										<%= current_user.nombre %>
+									<% else %>
+										Invitado
+									<% end %> 
+									<span class="caret"></span></a>
 								<ul class="dropdown-menu">
 									<li>
-										<a href="#">Action</a>
+										<% if user_signed_in? %> 
+											<%= link_to("Cerrar sesión", destroy_user_session_path) %>
+										<% else %>
+											<%= link_to "Iniciar sesión", new_user_session_path %>
+										<% end %>
 									</li>
-									<li>
-										<a href="#">Another action</a>
-									</li>
-									<li>
-										<a href="#">Something else here</a>
-									</li>
+									<% if user_signed_in? %> 
+										<li>
+											<%= link_to "Editar información", edit_user_registration_path %>
+										</li>
+									<% else %>
+										<li>
+											<%= link_to "Regístrate", new_user_registration_path %>
+										</li>
+									<% end %>
+									<% if user_signed_in? %> 
+										<li>
+											<%= link_to "Mi Carrito", '/carrito/carrito' %>
+										</li>
+									<% end %>
 									<li role="separator" class="divider"></li>
 									<li>
-										<a href="#">Separated link</a>
+										<%= link_to "Política de privacidad", '/welcome/politica_privacidad' %>
+									</li>
+									<li>
+										<%= link_to "Política de devoluciones", '/welcome/politica_devoluciones' %>
 									</li>
 								</ul>
 							</li>
@@ -90,7 +102,7 @@
 			</nav>
 			<div class="jumbotron text-center row">
 				<div class="col-sm-2 col-sm-offset-1">
-					<%=image_tag "logo.png", class:'img-responsive'%>
+					<%=image_tag "logo.png", class:'img-responsive', style:'max-width: 150px'%>
 				</div>
 				<div class="col-sm-8">
 					<h1 class="text-center text-primary" id='titulo'>Clave Crom&aacute;tica</h1>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'carrito/carrito'
+
   get 'welcome/index'
 
   get 'welcome/politica_privacidad'
@@ -7,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'welcome/contactanos'
   
-  devise_for :users
+  devise_for :users, controllers:{registrations: "users/registrations", sessions:"users/sessions", passwords:"users/passwords"}
 
   resources :canciones
 
@@ -30,6 +32,8 @@ Rails.application.routes.draw do
   
   get 'discos/generos/(:genero_id)' => 'discos#index', as: :discos_por_genero
   
+  post 'canciones/agregar_carrito/:id' => 'discos#add_item_to_shipping_cart', as: :agregar_a_carrito
+    
   root 'welcome#index' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

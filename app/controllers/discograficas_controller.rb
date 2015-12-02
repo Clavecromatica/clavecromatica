@@ -15,6 +15,7 @@ class DiscograficasController < ApplicationController
   # GET /discograficas/new
   def new
     @discografica = Discografica.new
+    authorize! :create, @discografia
   end
 
   # GET /discograficas/1/edit
@@ -27,6 +28,7 @@ class DiscograficasController < ApplicationController
     @discografica = Discografica.new(discografica_params)
 
     respond_to do |format|
+      authorize! :create, @discografia
       if @discografica.save
         format.html { redirect_to @discografica, notice: 'Discografica was successfully created.' }
         format.json { render :show, status: :created, location: @discografica }
@@ -41,6 +43,7 @@ class DiscograficasController < ApplicationController
   # PATCH/PUT /discograficas/1.json
   def update
     respond_to do |format|
+      authorize! :create, @discografia
       if @discografica.update(discografica_params)
         format.html { redirect_to @discografica, notice: 'Discografica was successfully updated.' }
         format.json { render :show, status: :ok, location: @discografica }
@@ -54,6 +57,7 @@ class DiscograficasController < ApplicationController
   # DELETE /discograficas/1
   # DELETE /discograficas/1.json
   def destroy
+    authorize! :create, @discografia
     @discografica.destroy
     respond_to do |format|
       format.html { redirect_to discograficas_url, notice: 'Discografica was successfully destroyed.' }

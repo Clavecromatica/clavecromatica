@@ -31,4 +31,9 @@
 		</tr>
 	<% end %>
 </table>
-<%= button_to "Editar disco", edit_disco_path(@disco ), method: :get, class: 'btn btn-primary center-block'%>
+<% if can? :edit, @disco%>
+	<%= button_to "Editar disco", edit_disco_path(@disco ), method: :get, class: 'btn btn-primary center-block'%>
+<% end %>
+<% if user_signed_in?%>
+	<%= button_to "Agregar al carrito", agregar_a_carrito_path(@disco), method: :post, class: 'btn btn-primary center-block' %>
+<% end %>

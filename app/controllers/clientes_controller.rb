@@ -15,6 +15,7 @@ class ClientesController < ApplicationController
   # GET /clientes/new
   def new
     @cliente = Cliente.new
+    authorize! :create, @cliente
   end
 
   # GET /clientes/1/edit
@@ -27,6 +28,7 @@ class ClientesController < ApplicationController
     @cliente = Cliente.new(cliente_params)
 
     respond_to do |format|
+      authorize! :create, @cliente
       if @cliente.save
         format.html { redirect_to @cliente, notice: 'Cliente was successfully created.' }
         format.json { render :show, status: :created, location: @cliente }
@@ -41,6 +43,7 @@ class ClientesController < ApplicationController
   # PATCH/PUT /clientes/1.json
   def update
     respond_to do |format|
+      authorize! :create, @cliente
       if @cliente.update(cliente_params)
         format.html { redirect_to @cliente, notice: 'Cliente was successfully updated.' }
         format.json { render :show, status: :ok, location: @cliente }
@@ -54,6 +57,7 @@ class ClientesController < ApplicationController
   # DELETE /clientes/1
   # DELETE /clientes/1.json
   def destroy
+    authorize! :create, @cliente
     @cliente.destroy
     respond_to do |format|
       format.html { redirect_to clientes_url, notice: 'Cliente was successfully destroyed.' }
