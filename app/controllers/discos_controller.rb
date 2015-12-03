@@ -39,6 +39,7 @@ class DiscosController < ApplicationController
     respond_to do |format|
       authorize! :create, @disco
       if @disco.save
+        DiscoMailer.new_disco(@disco).deliver
         format.html { redirect_to @disco, notice: 'Disco was successfully created.' }
         format.json { render :show, status: :created, location: @disco }
       else
