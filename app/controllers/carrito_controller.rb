@@ -6,5 +6,9 @@ class CarritoController < ApplicationController
     end
     @cart = JSON.parse(cookies[:carrito])
     @discos = Disco.where(id: @cart)
+    @total = 0
+    @discos.each do |disco|
+      @total = @total + disco.precio
+    end
   end
 end
